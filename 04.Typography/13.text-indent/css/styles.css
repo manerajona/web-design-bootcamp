@@ -1,0 +1,19 @@
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+div {
+  height: 100%;
+  width: 350px;
+}
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.indented {
+  text-indent: 1rem;
+}

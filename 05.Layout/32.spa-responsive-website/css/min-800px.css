@@ -1,0 +1,15 @@
+#hero {
+    background-image: url("../img/background-photo.jpg");
+}
+
+#hero > div {
+    height: 18vh;
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    margin-top: .4rem;
+}

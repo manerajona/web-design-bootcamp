@@ -1,0 +1,194 @@
+// KEYFRAMES
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// COLORS
+$color-primary-light: #c43ad6af;
+$color-primary-dark: #5c5ac5af;
+$color-secondary-light: #ff00f2;
+$color-secondary-dark: #ee30ff;
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+$color-grey-light-1: #ffffffee;
+$color-grey-light-2: #eee;
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-white: #fff;
+$color-black: #000;
+//FONT
+$default-font-size: 1rem;
+
+/* Styles */
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.header {
+    /*layout*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    /*background*/
+    background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light), url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    // .header__logo-box
+    &__logo-box {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
+    // .header__logo
+    &__logo {
+        height: 7rem;
+    }
+    // .header__text-box
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* hack to avoid the shaking */
+        backface-visibility: hidden;
+    }
+}
+
+.heading {
+    /*text*/
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    /*layout*/
+    margin: 1.5rem;
+    // .heading--title 
+    &--title {
+        font-weight: 700;
+        font-size: 5rem;
+        letter-spacing: 55px;
+    }
+    // .heading--subtitle
+    &--subtitle {
+        font-weight: 300;
+        font-size: 3rem;
+        letter-spacing: 40px;
+    }
+    // .heading--move-right
+    &--move-right {
+        animation: moveInRight 3s ease-out;
+    }
+    // .heading--move-left
+    &--move-left {
+        animation: moveInLeft 3s ease-out;
+    }
+}
+
+.btn {
+    // btn,
+    // .btn:link,
+    // .btn:visited
+    &,
+    &:link,
+    &:visited {
+        /*text*/
+        font-size: $default-font-size;
+        text-transform: uppercase;
+        /*layout*/
+        position: relative;
+        /*animation*/
+        transition: all .3s;
+    }
+    // .btn:hover
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black, .6);
+        /*animations*/
+        transform: translateY(-3px);
+        // .btn:hover::after
+        &::after {
+            opacity: 0;
+            /*animations*/
+            transform: scaleX(1.4) scaleY(1.6);
+        }
+    }
+    // .btn:active,
+    // .btn:focus
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: 0 0.5rem 1rem rgba($color-black, .6);
+        /*animations*/
+        transform: translateY(-1px);
+    }
+    //.btn::after
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        /*layout*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .3s;
+    }
+    // .btn--white
+    &--white {
+        color: $color-grey-dark;
+        background-color: $color-white;
+        border-radius: 10rem;
+        /*layout*/
+        margin-top: 3rem;
+        padding: 1.5rem 4rem;
+        &::after {
+            background-color: $color-white;
+        }
+    }
+    // .btn--animated
+    &--animated {
+        animation-name: moveUp;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Send us a message</h1>
+
+    <!--POST /message-->
+    <form action="/message" method="post">
+
+        <!--fildset-->
+        <fieldset>
+            <!--input text-->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstName" title="enter your first name!" placeholder="E.g. John"
+                autofocus autocomplete="off">
+
+            <!--input text-->
+            <label for="fname">Last Name:</label>
+            <input type="text" id="lname" name="lastName" title="enter your last name!" placeholder="E.g. Smith"
+                autocomplete="off">
+        </fieldset>
+
+        <fieldset>
+            <!--input email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" title="enter your email!"
+                placeholder="E.g. john.smith@example.com" autocomplete="off">
+
+            <!--input date-->
+            <label for="birth">Birth day:</label>
+            <input type="date" id="birth" name="birth" title="enter your birthday!" autocomplete="off">
+
+            <!--input file-->
+            <label for="ph">Photo:</label>
+            <input type="file" id="photo" name="ph" title="send us a photo of you!" autocomplete="off">
+        </fieldset>
+
+        <!--fildset legend-->
+        <fieldset>
+            <legend>What is your message about?</legend>
+            <!-- input check boxes -->
+            <input type="checkbox" id="question" name="question" value="question">Question<br>
+            <input type="checkbox" id="greeting" name="greeting" value="greeting">Greeting<br>
+            <input type="checkbox" id="advice" name="advice" value="advice">Advice
+        </fieldset>
+
+        <fieldset>
+            <legend>Do you like forms?</legend>
+             <!-- input radio -->
+            <input type="radio" name="radio_group" id="yes">Yes :)
+            <input type="radio" name="radio_group" id="no">No :'(
+        </fieldset>
+
+        <fieldset>
+            <!-- Select options -->
+            <label for="color">Choose your favourite color:</label>
+            <select id="color" name="color">
+                <option value="red" selected>Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yelow">Yelow</option>
+                <option value="pink">Pink</option>
+                <option value="black">Black</option>
+            </select>
+        </fieldset>
+
+        <!-- text area -->
+        <p>Message</p>
+        <textarea>Add your message here!</textarea><br>
+
+        <!-- input button -->
+        <button type="submit" name="submit" id="btn">Send</button>
+
+    </form>
+
+</body>
+
+</html>

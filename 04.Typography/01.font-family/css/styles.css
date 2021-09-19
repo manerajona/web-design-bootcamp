@@ -1,0 +1,19 @@
+h1 {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-family: serif;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+.cursive {
+  font-family: cursive;
+}

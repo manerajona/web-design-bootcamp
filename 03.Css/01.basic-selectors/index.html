@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>selectors</title>
+  <!-- this is how you link a css file with the html page-->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  
+  <!-- Element selector-->
+  <h1>Basic selectors</h1>
+  <h2>There are 4 types of selectors</h2>
+  
+  <h3>1. Element selectors</h3>
+  <div><p>Hello element selector!</p></div>
+
+  <!-- Id Selectors use id="key" and key must be UNIQUE-->
+  <h3>2. Id selectors</h3>
+  <div id="key1">
+    <p>
+      "The CSS ID selector matches an element based on the value of the element’s id attribute. 
+      In order for the element to be selected, its id attribute must match exactly the value given in the selector."
+    </p>
+  </div>
+
+  <div id="key2">
+    <p>
+      "The CSS ID selector matches an element based on the value of the element’s id attribute. 
+      In order for the element to be selected, its id attribute must match exactly the value given in the selector."
+    </p>
+  </div>
+
+  <!-- Class Selectors use class="classname" and are REUSABLE-->
+  <h3>3. Class selectors</h3>
+  <div class="class1">
+      <p class="class2">Hello class selector!</p>
+  </div>
+  
+  <br>
+
+  <!-- Attribute selectors are based on html attributes -->
+  <h3>4. Attribute selectors</h3>
+
+  <div>
+    <p contenteditable="true" >
+      "The CSS attribute selector matches elements based on the presence or value of a given attribute."
+    </p>
+  </div>
+  <div>
+    <img src="https://wiki.mozilla.org/images/thumb/a/ad/Mdn_logo-wordmark-full_color.png/240px-Mdn_logo-wordmark-full_color.png"><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">MDN docs EN</a>
+    <a href="https://developer.mozilla.org/es/docs/Web/CSS/Attribute_selectors" target="_blank">MDN docs ES</a>
+  </div>
+
+</body>
+
+</html>

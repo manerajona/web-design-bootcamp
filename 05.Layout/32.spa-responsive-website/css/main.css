@@ -1,0 +1,73 @@
+html {
+    font-family: 'Cantarell', sans-serif;
+    color: whitesmoke;
+}
+
+#hero {
+    /* background */
+    background-color: black;
+    background-image: url("../img/background-photo-mobile-devices.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* layout */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero>div {
+    height: 90vh;
+}
+
+.hero-center-spacebetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    /*text*/
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    /*layout*/
+    margin-top: .8rem;
+}
+
+h3 {
+    /*text*/
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: .8rem;
+    /*layout*/
+    line-height: 1.2;
+}
+
+button {
+    /*text*/
+    color: lightcyan;
+    font-size: 1.4rem;
+    font-weight: 700;
+    /*border*/
+    border: 1px solid lightcyan;
+    border-radius: 3px;
+    /*layout*/
+    padding: .7rem 1.2rem;
+    margin-top: .8rem;
+}

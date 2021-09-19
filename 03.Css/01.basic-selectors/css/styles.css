@@ -1,0 +1,66 @@
+/* All selector (wildcard) */
+* {
+  padding: 5px;
+}
+
+/* Element selectors*/
+h1,
+h2 {
+  color: darkblue;
+}
+
+h3 {
+  color: darkcyan;
+}
+
+p {
+  color: salmon;
+  font-size: 18px;
+}
+
+/* Id selectors*/
+#key1 {
+  width: 600px;
+  height: 100px;
+}
+
+#key2 {
+  width: 200px;
+  height: 300px;
+}
+
+/* Class selectors*/
+.class1 {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+}
+
+.class2 {
+  color: yellow;
+
+  background-color: green;
+  width: 50%;
+  height: 50%;
+}
+
+/* Attribute selector*/
+[contenteditable] {
+  color: grey;
+  border: 5px solid lightgrey;
+}
+
+[src] {
+  color: green;
+  border: 5px solid lightskyblue;
+}
+
+[href] {
+  color: blue;
+  border: 2px solid lightblue;
+}
+
+[target=_blank] {
+  color: violet;
+  border: 2px solid lightpink;
+}

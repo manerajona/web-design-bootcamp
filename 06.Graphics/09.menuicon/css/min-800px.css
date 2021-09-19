@@ -1,0 +1,53 @@
+header nav, header nav a, header svg {
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+}
+
+header div, header nav {
+    width: 300px;
+    margin: 0 1rem;
+}
+
+header nav {
+justify-content: space-between;
+}
+
+header div a {
+    justify-content: flex-start;
+}
+
+header nav a {
+    padding: 0 1rem;
+}
+
+header nav a:hover {
+    border-radius: 5px;
+    background-color: hsla(224, 96%, 85%, .5);
+}
+
+#hero {
+    background-image: url("../img/background-photo.jpg");
+}
+
+#hero > div {
+    height: 18vh;
+}
+
+.hero-center-spacebetween {
+    margin-top: 0;
+}
+
+#hero h1 {
+    font-size: 3.4rem;
+}
+
+#hero h3 {
+    margin-top: .4rem;
+}
+
+footer nav {
+    display: none;
+}

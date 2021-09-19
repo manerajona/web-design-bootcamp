@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Relative</title>
+  <!-- this is how you link a css file with the html page-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="fixed">I'm fixed</div>
+  <div id="relative">I'm relative</div>
+  <div id="static">I'm static</div>
+</body>
+
+</html>
+
+<!--
+What it really means is "relative to itself". If you set "position: relative;" on an element but no other positioning attributes (top, left, bottom or right), it will no effect on it's positioning at all, it will be exactly as it would be if you left it as position: static;
+But if you DO give it some other positioning attribute, say, "top: 10px;", it will shift it's position 10 pixels DOWN from where it would NORMALLY be. I'm sure you can imagine, the ability to shift an element around based on it's regular position is pretty useful. I find myself using this to line up form elements many times that have a
+tendency to not want to line up how I want them to. (css-tricks)
+-->

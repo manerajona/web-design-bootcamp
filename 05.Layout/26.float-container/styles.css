@@ -1,0 +1,28 @@
+div,
+img {
+    border: 2px dashed skyblue;
+    /*layout*/
+    margin: 20px;
+    padding: 20px;
+}
+
+div {
+    /*text*/
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    /*layout*/
+    overflow: auto;
+}
+
+.right {
+    float: right;
+    height: 10%;
+    width: 10%;
+}
+
+.left {
+    float: left;
+    height: 10%;
+    width: 10%;
+}

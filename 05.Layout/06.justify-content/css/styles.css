@@ -1,0 +1,38 @@
+.item {
+    /*border*/
+    border: 2px solid darkred;
+    /*background*/
+    background-color: salmon;
+    /*layout*/
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* flex container */
+
+.container {
+    display: flex;
+}
+
+.at-end {
+    justify-content: end;
+}
+
+.at-center {
+    justify-content: center;
+}
+
+.at-space-between {
+    justify-content: space-between;
+}
+
+.at-space-arround {
+    justify-content: space-around;
+}
+
+.at-space-evenly {
+    justify-content: space-evenly;
+}

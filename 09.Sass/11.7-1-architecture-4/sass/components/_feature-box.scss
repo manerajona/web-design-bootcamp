@@ -1,0 +1,32 @@
+.feature-box {
+    /*text*/
+    text-align: center;
+    /*background*/
+    background-color: rgba($color-white, .7);
+    /*border*/
+    border-radius: 3px;
+    /*layout*/
+    height: 18rem;
+    padding: 1.5rem;
+    box-shadow: 0 1rem 1rem rgba($color-black, .6);
+    /*animation*/
+    transition: all .3s;
+    &:hover {
+        transform: translateY(-1rem) scale(1.1);
+        box-shadow: 0 1.5rem 1.5rem rgba($color-black, .9);
+    }
+    &__icon {
+        font-size: 3rem;
+        color: transparent;
+        /*background*/
+        background-image: linear-gradient(to right, $color-secondary-dark, $color-secondary-light);
+        -webkit-background-clip: text;
+        /*layout*/
+        display: inline-block;
+    }
+    &__text {
+        color: $color-grey-dark-3;
+        font-size: .8rem;
+        font-weight: 300;
+    }
+}

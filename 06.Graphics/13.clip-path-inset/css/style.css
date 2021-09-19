@@ -1,0 +1,53 @@
+body {
+    padding: 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    clip-path: inset(0 0 0 0 round 5% 5% 5% 5%);
+    /*More info on: 
+    - https://bennettfeely.com/clippy/
+    - https://css-tricks.com/almanac/properties/c/clip-path/
+    */
+}
+
+.header-logo {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+}
+
+.logo {
+    height: 7rem;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-primary-main {
+    color: #000000ee;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    letter-spacing: 4rem;
+    text-transform: uppercase;
+}
+
+.heading-primary-sub {
+    color: #303030ee;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+}

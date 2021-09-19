@@ -1,0 +1,47 @@
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+div {
+  height: 100%;
+  width: 600px;
+}
+
+.roboto-light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.simple-shadow {
+  /* x, y, blur, color*/
+  text-shadow: 1px 1px 1px gray;
+}
+
+.blured-shadow {
+  /* x, y, blur, color*/
+  text-shadow: 5px 5px 5px lightsteelblue;
+}
+
+.inverted-blured-shadow {
+  /* x, y, blur, color*/
+  text-shadow: -5px -5px 5px lightpink;
+}

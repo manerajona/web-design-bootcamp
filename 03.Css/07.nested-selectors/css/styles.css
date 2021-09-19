@@ -1,0 +1,27 @@
+* {
+  padding: 5px;
+}
+
+h1, h2 {
+  color: darkblue;
+}
+
+/* All children*/
+div p {
+  color: red;
+}
+
+/* All immediate children */
+div > p {
+  font-size: 30px;
+}
+
+/* All siblings */
+div ~ p {
+  font-family: cursive;
+}
+
+/* Immediate sibling */
+div + p {
+  text-decoration: line-through;
+}

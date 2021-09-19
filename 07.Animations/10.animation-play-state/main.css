@@ -1,0 +1,39 @@
+html {
+    font-size: 1vw;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+
+body {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    animation-name: grow-text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+}
+
+@keyframes grow-text {
+    0% { font-size: 1rem; }
+    100%   { font-size: 17rem; }
+}

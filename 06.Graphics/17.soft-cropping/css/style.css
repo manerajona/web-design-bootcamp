@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #F2F2F2, #f2f2f210), url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.heading-primary-main {
+    color: #b99999ee;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    letter-spacing: 5rem;
+    text-transform: uppercase;
+}
+
+.heading-primary-sub {
+    color: #b99999;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 4rem;
+    text-transform: uppercase;
+}

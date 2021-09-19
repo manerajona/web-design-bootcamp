@@ -1,0 +1,39 @@
+h1 {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-family: serif;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.rems {
+  font-size: 1.5rem;
+}
+
+.bolds {
+  font-weight: bold;
+}
+
+.lights {
+  font-weight: lighter;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}

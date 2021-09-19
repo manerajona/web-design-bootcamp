@@ -1,0 +1,24 @@
+div {
+    width: 650px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.letters-spa {
+    letter-spacing: 10px;
+    font-size: 2rem;
+}
+
+.word-spa {
+    word-spacing: 10px;
+    font-size: 1.5rem;
+    text-align: justify;
+}

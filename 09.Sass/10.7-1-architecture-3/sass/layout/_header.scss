@@ -1,0 +1,32 @@
+.header {
+    /*layout*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    /*background*/
+    background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light), url(img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    // .header__logo-box
+    &__logo-box {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
+    // .header__logo
+    &__logo {
+        height: 7rem;
+    }
+    // .header__text-box
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* hack to avoid the shaking */
+        backface-visibility: hidden;
+    }
+}

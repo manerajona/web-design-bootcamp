@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Path</title>
+    <style>
+        svg {
+            border: 1px solid black;
+        }
+
+        div {
+            width: 60%;
+            padding: 50px;
+            display: flex;
+            margin: 0 auto;
+            border: 10px groove orchid;
+        }
+
+        section {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <section>
+            <h1>M</h1>
+            <p>move to a point</p>
+
+            <h1>L</h1>
+            <p>draw a line to a point</p>
+
+            <h1>l</h1>
+            <p>draw a line from where you're at to a point</p>
+
+            <h1>V</h1>
+            <p>draw a vertical line to this y-coordinate</p>
+
+            <h1>v</h1>
+            <p>draw a vertical line from where you're at this distance</p>
+
+            <h1>H</h1>
+            <p>draw a horizontal line to this x-coordinate</p>
+
+            <h1>h</h1>
+            <p>draw a horizontal line from where you're at this distance</p>
+
+            <h1>Z</h1>
+            <p>Close path</p>
+
+        </section>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="800" height="800">
+
+            <!--<path d="M 10 10"/>-->
+            <!--<path d="M 10 10 L 100 150" stroke="black"/>-->
+            <!--<path d="M 10 10 l 90 140" stroke="black"/>-->
+            <!--<path d="M10 10 l90 140 v-50 h20" stroke="black" stroke-width="4" fill="transparent"/>-->
+            <path d="M10 10 l90 140 V30 h20 m20 10 l90 140" stroke="black" stroke-width="4" fill="transparent" />
+
+            <!-- close path -->
+            <path d="M270 270 H360 V360 H270 L270 Z"/>
+
+            <!-- Points -->
+            <circle cx="270" cy="270" r="2" fill="red" />
+            <circle cx="360" cy="360" r="2" fill="red" />
+            <circle cx="360" cy="270" r="2" fill="red" />
+            <circle cx="270" cy="360" r="2" fill="red" />
+            
+
+            <!-- Cubic bezier -->
+            <path d="M100 600 C 200 800, 400 800, 500 600" stroke="black" stroke-width="15px" fill="transparent"/>
+
+        </svg>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.newsletter {
+    /*background*/
+    box-shadow: 0 1rem 1rem rgba($color-black, .6);
+    background-image: linear-gradient(105deg, rgba($color-white, .7) 50%, transparent 50%), url(img/book-cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 31rem;
+    padding: 1rem 2rem;
+}

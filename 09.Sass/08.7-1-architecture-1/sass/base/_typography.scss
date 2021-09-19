@@ -1,0 +1,33 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.heading {
+    /*text*/
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    /*layout*/
+    margin: 1.5rem;
+    // .heading--title 
+    &--title {
+        font-weight: 700;
+        font-size: 5rem;
+        letter-spacing: 55px;
+    }
+    // .heading--subtitle
+    &--subtitle {
+        font-weight: 300;
+        font-size: 3rem;
+        letter-spacing: 40px;
+    }
+    // .heading--move-right
+    &--move-right {
+        animation: moveInRight 3s ease-out;
+    }
+    // .heading--move-left
+    &--move-left {
+        animation: moveInLeft 3s ease-out;
+    }
+}

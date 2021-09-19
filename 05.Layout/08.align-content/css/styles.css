@@ -1,0 +1,41 @@
+.item {
+    /*border*/
+    border: 2px solid darkred;
+    /*background*/
+    background-color: salmon;
+    /*layout*/
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* flex container */
+
+.container {
+    /*border*/
+    border: 1px dashed black;
+    /*layout*/
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+}
+
+.at-start {
+    align-content: flex-start;
+    /*uncomment to see the difference*/
+    /*align-items: flex-start;*/
+}
+
+.at-end {
+    align-content: flex-end;
+    /*uncomment to see the difference*/
+    /*align-items: flex-end;*/
+}
+
+.at-center {
+    align-content: center;
+    /*uncomment to see the difference*/
+    /*align-items: center;*/
+}

@@ -1,0 +1,14 @@
+{
+    "name": "7-1-arch",
+    "version": "1.0.0",
+    "description": "7-1 Architecture",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass main.scss generated.css"
+    },
+    "author": "Jonathan Manera",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^6.0.1"
+    }
+}

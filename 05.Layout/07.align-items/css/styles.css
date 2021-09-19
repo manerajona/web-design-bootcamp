@@ -1,0 +1,34 @@
+.item {
+    /*border*/
+    border: 2px solid darkred;
+    /*background*/
+    background-color: salmon;
+    /*layout*/
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* flex container */
+
+.container {
+    /*border*/
+    border: 1px dashed black;
+    /*layout*/
+    display: flex;
+    height: 200px;
+}
+
+.at-start {
+    align-items: flex-start;
+}
+
+.at-end {
+    align-items: flex-end;
+}
+
+.at-center {
+    align-items: center;
+}

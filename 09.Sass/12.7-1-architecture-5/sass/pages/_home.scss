@@ -1,0 +1,31 @@
+.section {
+    &__about {
+        padding: 3rem 0;
+        //margin-top: -20vh;
+    }
+    &__features {
+        padding: 13rem 0;
+        /*background*/
+        background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light), url(img/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    }
+    &__courses {
+        padding: 3rem 0;
+        margin-bottom: 10vh;
+    }
+    &__stories {
+        padding: 13rem 0;
+        /*background*/
+        position: relative;
+        background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary-light), url(img/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    }
+}

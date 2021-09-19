@@ -1,0 +1,21 @@
+// colors
+$color-primary: #b83b5e; // pink
+$color-secondary: #f08a5d; //orange
+$color-tertiary: #f9ed69; // yellow
+$color-text-dark: #333; // dark gray
+$color-text-light: whitesmoke;
+// pixels
+$pixels-margin: 30px;
+$pixels-width-button: 150px;
+
+/* Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: $pixels-margin;
+    background-color: $color-tertiary;
+}

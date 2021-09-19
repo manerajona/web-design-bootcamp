@@ -1,0 +1,58 @@
+body {
+    /*text*/
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    /*layout*/
+    padding: 25px;
+}
+
+.header {
+    /*layout*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    /*background overlaying*/
+    background-image: linear-gradient(to right bottom, #5c5ac5af, #c43ad6af), url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.header-logo {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+.logo {
+    height: 7rem;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-primary-main {
+    /*text*/
+    color: #ffffffee;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 4rem;
+    text-transform: uppercase;
+}
+
+.heading-primary-sub {
+    /*text*/
+    color: #ffffffee;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+}

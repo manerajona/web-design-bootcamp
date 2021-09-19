@@ -1,0 +1,61 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.heading {
+    /*text*/
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: $default-font-size;
+    /*layout*/
+    margin: 1.5rem;
+    // .heading--title 
+    &--title {
+        font-weight: 700;
+        font-size: 5rem;
+        letter-spacing: 55px;
+    }
+    // .heading--subtitle
+    &--subtitle {
+        font-weight: 300;
+        font-size: 3rem;
+        letter-spacing: 40px;
+    }
+    &--secondary {
+        color: $color-primary-dark;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        /*background*/
+        background-image: linear-gradient(to right, $color-grey-light-1, $color-tertiary-light);
+        -webkit-background-clip: text;
+        /*layout*/
+        display: inline-block;
+        /*animations*/
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.1);
+            text-shadow: .5rem .5rem .5rem rgba($color-grey-dark-2, .8);
+        }
+    }
+    // .heading--move-right
+    &--move-right {
+        animation: moveInRight 3s ease-out;
+    }
+    // .heading--move-left
+    &--move-left {
+        animation: moveInLeft 3s ease-out;
+    }
+    &--tertiary {
+        color: $color-tertiary-dark;
+        font-weight: 700;
+    }
+}
+
+.paragraph {
+    font-size: .9rem;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

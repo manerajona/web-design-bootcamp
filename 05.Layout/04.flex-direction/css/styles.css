@@ -1,0 +1,30 @@
+.item {
+    /*border*/
+    border: 2px solid darkred;
+    /*background*/
+    background-color: salmon;
+    /*layout*/
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* flex container */
+
+.container {
+    display: flex;
+}
+
+.row-reversed {
+    flex-direction: row-reverse;
+}
+
+.columned {
+    flex-direction: column;
+}
+
+.column-reversed {
+    flex-direction: column-reverse;
+}

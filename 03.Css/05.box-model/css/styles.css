@@ -1,0 +1,66 @@
+
+p {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.red {
+    /*content*/
+    background-color: red;
+    width: 100%;
+    height: 100%;
+
+    /*  maintain box width and height in 
+        spite of padding and border*/
+    box-sizing: border-box;
+
+    /*padding*/
+    padding: 20px;
+
+    /*border*/
+    border: solid 10px pink;
+
+    /*margin*/
+    margin: 20px;
+}
+
+.green {
+    /*content*/
+    background-color: green;
+    width: 50%;
+    height: 100%;
+
+        
+    /*  maintain box width and height in 
+        spite of padding and border*/
+    box-sizing: border-box;
+
+    /*padding*/
+    padding: 15px;
+
+    /*border*/
+    border: dotted 10px greenyellow;
+
+    /*margin*/
+    margin: 15px;
+}
+
+.blue {
+    /*content*/
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+
+    /*  maintain box width and height in 
+        spite of padding and border*/
+    box-sizing: border-box;
+
+    /*padding*/
+    padding: 10px;
+
+    /*border*/
+    border: dashed 4px blueviolet;
+
+    /*margin*/
+    margin: 10px;
+}

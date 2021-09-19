@@ -1,0 +1,71 @@
+/* specificity(0, 0, 1) */
+
+h1,
+h2 {
+    color: brown;
+}
+
+div {
+    width: 100%;
+    height: 200px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+/* specificity(0, 1, 0) */
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.button {
+    width: 200px;
+    display: block;
+}
+
+
+/* specificity(1, 0, 0) */
+
+#nav {
+    height: 400px;
+    padding: 10px;
+    border: 2px dashed black;
+}
+
+
+/* specificity(0, 1, 1) */
+
+a:hover {
+    background-color: violet;
+}
+
+
+/* specificity(1, 1, 1) */
+
+#nav a:hover {
+    background-color: yellow;
+}
+
+
+/* specificity(1, 2, 1) */
+
+#nav a.button-danger:hover {
+    background-color: red;
+}
+
+
+/* specificity(1, 2, 1) */
+
+#nav a.button:hover {
+    background-color: green;
+}

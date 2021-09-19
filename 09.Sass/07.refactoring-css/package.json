@@ -1,0 +1,14 @@
+{
+    "name": "sass-refactoring",
+    "version": "1.0.0",
+    "description": "Sass refactoring",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass main.scss css/generated.css"
+    },
+    "author": "Jonathan Manera",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^6.0.1"
+    }
+}

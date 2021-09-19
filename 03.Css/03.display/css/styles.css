@@ -1,0 +1,37 @@
+p {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.red {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: groove 6px pink;
+}
+
+.green {
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    border: dotted 5px greenyellow;
+}
+
+.blue {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    border: dashed 4px blueviolet;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.none {
+    display: none;
+}

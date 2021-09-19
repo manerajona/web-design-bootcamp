@@ -1,0 +1,31 @@
+html,
+body,
+div {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    /*text*/
+    color: greenyellow;
+    text-shadow: 2px 2px 2px antiquewhite;
+    font-size: 8vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    /*background*/
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    /*layout*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

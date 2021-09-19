@@ -1,0 +1,92 @@
+// colors
+$color-primary: #b83b5e; // pink
+$color-secondary: #f08a5d; //orange
+$color-tertiary: #f9ed69; // yellow
+$color-text-dark: #333; // dark gray
+$color-text-light: whitesmoke;
+// pixels
+$pixels-margin: 30px;
+$pixels-width-button: 150px;
+// mixins
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin style-link-text($color) {
+    color: $color;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: $pixels-margin;
+    background-color: $color-tertiary;
+    // include mixing
+    @include clearfix();
+}
+
+.navigation {
+    float: left;
+    li // .navigation li 
+    {
+        display: inline-block;
+        margin-left: $pixels-margin;
+        /* 
+          & = self (for pseudo-classes)
+        */
+        &:first-child // .navigation li:first-child 
+        {
+            margin: 0;
+        }
+        a // .navigation li a
+        {
+            @include style-link-text($color-text-dark);
+        }
+    }
+}
+
+.buttons {
+    float: right;
+}
+
+.btn--primary:link,
+.btn--secondary:link {
+    // text
+    @include style-link-text($color-text-light);
+    // border
+    border-radius: 100px;
+    // layout
+    padding: 10px;
+    display: inline-block;
+    width: $pixels-width-button;
+}
+
+.btn--primary {
+    &:link {
+        background-color: $color-primary;
+    }
+    &:hover {
+        background-color: darken($color-primary, 10%);
+    }
+}
+
+.btn--secondary {
+    &:link {
+        background-color: $color-secondary;
+    }
+    &:hover {
+        background-color: lighten($color-secondary, 10%);
+    }
+}
